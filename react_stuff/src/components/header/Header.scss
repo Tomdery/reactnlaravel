@@ -1,0 +1,11 @@
+.header-color {
+    background-color: #8a8a8a;
+    border-bottom: 5px dotted #000;
+    border-top: 5px dotted #000;
+    &:hover {
+        background-color: #000;
+        color: #8a8a8a;
+        border-bottom: 5px solid #8a8a8a;
+        border-top: 5px solid #8a8a8a;
+    }
+}
