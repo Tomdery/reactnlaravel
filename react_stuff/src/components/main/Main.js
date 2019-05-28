@@ -15,7 +15,6 @@ export default class Main extends Component {
         fetch("http://web.local/api/post")
             .then(response => response.json())
             .then(data => {
-                console.log(data);
                 this.setState({
                     posts: data
                 })

@@ -12,38 +12,17 @@ export default class Post extends Component {
 
     }
 
+
     handleClick(){
-        this.setState(prevState => {
-            return {
-                counter: prevState.counter + 1
-            } 
-        })
+        this.setState(prevState => ({counter:prevState.counter+1}))
     }
-
-    handleLink(e){
-        const id = e.target.id;
-        console.log(id);
-    }
-
-
 
     render() {
         return (
             <div className='random-class'>
-                <Router>
-                    
-                Linkas (){
-             return (<h1>Labas</h1>)
-    }
-                    
-                    
-                    <Link to={`/post/${this.props.id}`}><h2 id={this.props.id} onClick={this.handleLink}>{this.props.title}</h2></Link>
+                     
+                    <Link to={`/post/${this.props.id}`}><h2>{this.props.title}</h2></Link>
                 
-
-                
-                <Route path={`post/:id`} component={Linkas} />
-
-                </Router>
                 <p>{this.props.content}</p>
                 <p>{this.props.by}</p>
                 <p>{this.props.created_at}</p>
